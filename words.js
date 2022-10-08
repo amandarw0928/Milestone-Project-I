@@ -1,38 +1,38 @@
-const words = [
+let words = [
     {
-        word: "flower"
+        word: "flower",
         hint: "Makes fruits."
     }
     {
-        word: "leaves"
+        word: "leaves",
         hint: "Trap sunlight to help the plant make food."
     }
     {
-        word: "sunlight"
+        word: "sunlight",
         hint: "Collected by leaves to help make food for the plant."
     }
     {
-        word: "water"
+        word: "water",
         hint: "Collected by roots to help make food for the plant."
     }
     {
-        word: "seed"
+        word: "seed",
         hint: "Makes a new plant."
     }
     {
-        word: "petals"
+        word: "petals",
         hint: "Attract pollinators to the flower."
     }
     {
-        word: "roots"
+        word: "roots",
         hint: "Hold the plant in the ground and collect nutrients from soil."
     }
     {
-        word: "stem"
+        word: "stem",
         hint: "Brings water to all the parts of the plant."
     }
     {
-        word: "fruit"
+        word: "fruit",
         hint: "Makes seeds."
     }
 ]
