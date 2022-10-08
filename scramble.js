@@ -1,7 +1,7 @@
-const wordText = document.querySelector(".word");
-hintText = document.querySelector(".hint span");
-inputField = document.querySelector(".hint span");
-checkBtn = document.querySelector(".checkword");
+const wordText = document.querySelector(".word"),
+    hintText = document.querySelector(".hint span"),
+    inputField = document.querySelector(".input"),
+    checkBtn = document.querySelector(".check-word");
 
 let correctWord;
 
@@ -10,24 +10,21 @@ const initGame = () => {
     let wordArray = randomObj.word.split("");
     for (let i = wordArray.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
-        let temp = wordArray[i];
-        wordArray[i] = wordArray[j];
-        wordArray[j] = temp;
+        [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
     }
     wordText.innerText = wordArray.join("");
     hintText.innerText = randomObj.hint;
-    correctWord = random.word.toLowerCase();
+    correctWord = random.word.toLowerCase();;
     inputField.value = "";
     inputField.setAttribute("maxlength", correctWord.length);
-    console.log(randomObj);
 }
 
 initGame();
 
 const checkWord = () => {
-    let userWord = inputField.value.toLocaleLowerCase();
-    if (userWord !== correctWord) return alert('Oops! ${userWord} is not correct. Try again!');
-    alert('Yes! ${userWord.toUpperCase()} is correct. Great job!');
+    let userWord = inputField.value.toLowerCase();
+    if (userWord !== correctWord) return alert(`Oops! ${userWord} is not correct. Try again!`);
+    alert(`Yes! ${userWord.toUpperCase()} is correct. Great job!`);
     initGame();
 }
 
