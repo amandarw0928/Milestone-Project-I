@@ -61,19 +61,27 @@ body {
     width: 100%;
     height: 60px;
     outline: none;
-    font-size: 18px padding 0 16px;
+    padding: 0 16px;
+    font-size: 18px;
     border-radius: 5px;
     border: 1px solid #aaa;
 }
 
-.content .button {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
+.content input:focus {
+    box-shadow: 0px 2px 4px cadetblue;
 }
 
-.button button{
-    align-items: center;
+.content input::placeholder {
+    color: gray;
+}
+
+.content .button {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.button button {
     border: none;
     outline: none;
     color: white;
@@ -81,7 +89,12 @@ body {
     padding: 15px 0;
     font-size: 17px;
     border-radius: 7px;
-    width: calc(100% / 2 - 8px);
+    width: 150px;
+    transition: all 0.2s ease;
+}
+
+.button button:active {
+    transform: scale(.90);
 }
 
 .button .check-word {
@@ -89,5 +102,5 @@ body {
 }
 
 .button .check-word:hover {
-    background-color: rgb(255, 190, 71);
+    background-color: rgb(255, 177, 31);
 }
