@@ -17,6 +17,8 @@ const initGame = () => {
     wordText.innerText = wordArray.join("");
     hintText.innerText = randomObj.hint;
     correctWord = random.word.toLowerCase();
+    inputField.value = "";
+    inputField.setAttribute("maxlength", correctWord.length);
     console.log(randomObj);
 }
 
@@ -24,8 +26,9 @@ initGame();
 
 const checkWord = () => {
     let userWord = inputField.value.toLocaleLowerCase();
-    if(userWord !== correctWord) return alert('Oops! ${userWord} is not correct. Try again!');
-    alert('Yes! ${userWord}.toUpperCase() is not correct!');
+    if (userWord !== correctWord) return alert('Oops! ${userWord} is not correct. Try again!');
+    alert('Yes! ${userWord.toUpperCase()} is correct. Great job!');
+    initGame();
 }
 
 checkBtn.addEventListener("click", checkWord);
