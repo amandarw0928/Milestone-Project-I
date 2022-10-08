@@ -1,6 +1,6 @@
 const wordText = document.querySelector(".word"),
     hintText = document.querySelector(".hint span"),
-    inputField = document.querySelector(".input"),
+    inputField = document.querySelector("input"),
     checkBtn = document.querySelector(".check-word");
 
 let correctWord;
@@ -24,8 +24,8 @@ initGame();
 const checkWord = () => {
     let userWord = inputField.value.toLowerCase();
     if (userWord !== correctWord) return alert(`Oops! ${userWord} is not correct. Try again!`);
-    if (userWord === correctWord) return alert(`Yes! ${userWord.toLowerCase()} is correct. Great job!`);
     if (!userWord) return alert(`Enter your answer!`);
+    alert(`Yes! ${userWord.toLowerCase()} is correct. Great job!`);
     initGame();
 }
 
