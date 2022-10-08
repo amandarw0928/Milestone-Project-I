@@ -9,19 +9,19 @@ const words = [
     }
     {
         word: "sunlight"
-        hint: ""
+        hint: "Collected by leaves to help make food for the plant."
     }
     {
         word: "water"
-        hint: "Makes seeds"
+        hint: "Collected by roots to help make food for the plant."
     }
     {
         word: "seed"
-        hint: "Makes seeds"
+        hint: "Makes a new plant."
     }
     {
         word: "petals"
-        hint: "Makes seeds"
+        hint: "Attract pollinators to the flower."
     }
     {
         word: "roots"
