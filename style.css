@@ -1,12 +1,9 @@
-* {
-    border: 1px dotted pink;
-}
-
 ul {
     white-space: nowrap;
 }
 
-.top-photos, .bottom-photos {
+.top-photos,
+.bottom-photos {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -14,7 +11,8 @@ ul {
     padding: 0px;
 }
 
-.right-photo, .left-photo {
+.right-photo,
+.left-photo {
     list-style: none;
     display: flex;
     padding: 5px;
