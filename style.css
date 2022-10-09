@@ -2,8 +2,7 @@ ul {
     white-space: nowrap;
 }
 
-.top-photos,
-.bottom-photos {
+.top-photos {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -15,7 +14,7 @@ ul {
 .left-photo {
     list-style: none;
     display: flex;
-    padding: 5px;
+    padding: 2px;
     justify-content: space-evenly;
 }
 
