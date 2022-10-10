@@ -29,4 +29,7 @@ const checkWord = () => {
     initGame();
 }
 
+let score = 0;
+if (userWord !== correctWord) return
+
 checkBtn.addEventListener("click", checkWord);
