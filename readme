@@ -2,7 +2,10 @@ This is a word scramble made with plant-related words.
 The scrambled words are parts of a plant or things a plant needs:
 (flower, leaves, sunlight, water, seed, petals, roots, stem, fruit)
 
-User types in the correct word and clicks 'check word.'
-User receives alert if incorrect or correct.
+The user types in their answer and clicks 'check word.'
+User receives alert if their answer is incorrect or correct.
+
+*Needs score keeping.
+*Needs conclusion for user to know they've cycled through all possible words.
 
 Photos from Unsplash.
